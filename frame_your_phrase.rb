@@ -23,6 +23,7 @@ response_array.each { |word| word_length.push(word.length) }
 # finds the length of the longest word in the phrase
 longest = word_length.max
 
+# creates the left border of the frame
 response_array.each { |word| word.prepend('* ') }
 
 difference_from_longest = []

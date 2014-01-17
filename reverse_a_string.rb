@@ -9,3 +9,4 @@ puts "Please enter a string to reverse: "
 response = gets.chomp
 
 midpoint = response.length / 2
+
