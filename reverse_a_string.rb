@@ -1,12 +1,20 @@
-# Reverse a string in place. In other words, do not create 
-# a new string or use other methods on the string such as reverse. 
-# The goal of the problem is to use a loop and the string 
-#accessors to figure out which values to swap for other values. 
-
+# This program reverses a string in place. 
+# In other words, it does not create a new string or 
+# use other methods on the string such as reverse. 
 
 puts "Please enter a string to reverse: "
 
 response = gets.chomp
 
 midpoint = response.length / 2
+
+i = 0
+while i < midpoint
+	temp = response[i] 
+	response[i] = response[-(i + 1)]
+	response[-(i + 1)] = temp
+	i += 1
+end
+
+puts response
 
