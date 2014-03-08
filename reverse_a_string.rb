@@ -1,5 +1,5 @@
 # This program reverses a string in place. 
-# In other words, it does not create a new string or 
+# In other words, it does not create a new string, or 
 # use other methods on the string such as reverse. 
 
 puts "Please enter a string to reverse: "
