@@ -26,15 +26,16 @@ longest = word_length.max
 # creates the left border of the frame
 response_array.each { |word| word.prepend('* ') }
 
-difference_from_longest = []
+# generates the empty space and the right border
+response_array.map! {|word| word + (" "*((longest + 2)-word.length)) + " *"  }
 
-# finds the difference between the length of each word and the longest word
-word_length.each { |length| difference_from_longest.push(longest - length)}
-
-#response_array.each { |word| word + '0' * 4  }
-
-response_array.each { |word| word + ' *' }
-
+# prints the top border
 puts "*" * (longest + 4)
-puts response_array
+
+# prints the words to be framed
+puts response_array 
+
+#prints the bottom border
 puts "*" * (longest + 4)
+
+
